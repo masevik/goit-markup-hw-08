@@ -1,0 +1,17 @@
+$fontFamily: Roboto, sans-serif;
+$mainTextColor: #757575;
+$blackTextColor: #212121;
+$whiteTextColor: #ffffff;
+$accentColor: #2196f3;
+$mainBackgroundColor: #2f303a;
+$secondBackgroundColor: #f5f4fa;
+$whiteBackgroundColor: #ffffff;
+$linkColor: #afb1b8;
+$mainRadius: 4px;
+$buttonShadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$transitionFunction: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+:root {
+  --card-gap: 30px;
+  --card-item: 1;
+}

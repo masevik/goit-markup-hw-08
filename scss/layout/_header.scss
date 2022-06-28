@@ -1,0 +1,12 @@
+.header {
+  @include font(null, 500, 1.14, 0.02em);
+  border-bottom: 1px solid #ececec;
+
+  .container {
+    display: flex;
+  }
+}
+
+.header__logo {
+  margin-right: 93px;
+}

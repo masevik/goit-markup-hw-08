@@ -1,0 +1,14 @@
+body {
+  font-family: $fontFamily;
+  @include font(14px, null, 1.71, 0.03em);
+  color: $mainTextColor;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}

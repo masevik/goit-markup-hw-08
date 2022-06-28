@@ -1,0 +1,24 @@
+.benefits {
+  padding-bottom: 0px;
+}
+
+.benefits__title {
+  margin-bottom: 10px;
+  @include font(14px, null, 1.14, null);
+  text-transform: uppercase;
+  color: $blackTextColor;
+}
+
+.benefits__item {
+  --card-item: 4;
+}
+
+.benefits__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $secondBackgroundColor;
+  border-radius: $mainRadius;
+}

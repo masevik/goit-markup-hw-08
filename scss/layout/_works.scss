@@ -1,0 +1,20 @@
+.works__item {
+  --card-item: 3;
+}
+
+.works__thumb {
+  position: relative;
+}
+
+.works__title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 27px 0;
+  @include font(14px, null, 1.14, null);
+  text-align: center;
+  text-transform: uppercase;
+  color: $whiteTextColor;
+  background: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,25 @@
+.clients__item {
+  --card-item: 6;
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  border-radius: $mainRadius;
+  border: 1px solid $linkColor;
+  color: $linkColor;
+  outline: none;
+  transition: color $transitionFunction, border $transitionFunction;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accentColor;
+    color: $accentColor;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

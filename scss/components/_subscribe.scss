@@ -1,0 +1,30 @@
+.subscribe {
+  display: flex;
+}
+
+.subscribe__field {
+  padding: 15px 16px;
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  @include font(16px, null, 1.25, 0.03em);
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  outline: none;
+  transition: border-color $transitionFunction;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus-within {
+    border-color: $accentColor;
+  }
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+}
