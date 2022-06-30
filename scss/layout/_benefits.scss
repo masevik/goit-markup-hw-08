@@ -1,5 +1,7 @@
 .benefits {
-  padding-bottom: 0px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
+  }
 }
 
 .benefits__title {
@@ -7,10 +9,26 @@
   @include font(14px, null, 1.14, null);
   text-transform: uppercase;
   color: $blackTextColor;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
-.benefits__item {
-  --card-item: 4;
+.benefits__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.benefits__list .benefits__item {
+  @media screen and (min-width: 768px) {
+    --card-item: 2;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --card-item: 4;
+  }
 }
 
 .benefits__thumb {

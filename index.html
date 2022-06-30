@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <nav class="nav">
           <a href="/" lang="en" class="logo header__logo"
@@ -51,7 +51,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="hero">
         <div class="container">
@@ -119,14 +119,14 @@
           </ul>
         </div>
       </section>
-      <section class="works section">
+      <!-- <section class="works section">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="list works__list card-set">
             <li class="works__item card-set__item">
               <div class="works__thumb">
                 <img
-                  src="./images/img1.jpg"
+                  src="./images/works1_dt.jpg"
                   alt="Планшет и клавиатура на столе"
                   width="370"
                   height="294"
@@ -137,7 +137,7 @@
             <li class="works__item card-set__item">
               <div class="works__thumb">
                 <img
-                  src="./images/img2.jpg"
+                  src="./images/works2_dt.jpg"
                   alt="Ноутбук и телефон"
                   width="370"
                   height="294"
@@ -148,7 +148,7 @@
             <li class="works__item card-set__item">
               <div class="works__thumb">
                 <img
-                  src="./images/img3.jpg"
+                  src="./images/works3_dt.jpg"
                   alt="Планшет"
                   width="370"
                   height="294"
@@ -158,18 +158,42 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <section class="team section">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="list team__list card-set">
             <li class="team__item card-set__item">
-              <img
-                src="./images/photo1.jpg"
-                alt="Фото Игоря Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo1_dt.jpg    1x,
+                    ./images/photo1_dt@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo1_tab.jpg    1x,
+                    ./images/photo1_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo1_mob.jpg    1x,
+                    ./images/photo1_mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/photo1_mob.jpg"
+                  alt="Фото Игоря Демьяненко"
+                  width="450"
+                  height="460"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p lang="en" class="team__position">Product Designer</p>
@@ -229,12 +253,35 @@
             </li>
 
             <li class="team__item card-set__item">
-              <img
-                src="./images/photo2.jpg"
-                alt="Фото Ольги Репиной"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo2_dt.jpg    1x,
+                    ./images/photo2_dt@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo2_tab.jpg    1x,
+                    ./images/photo2_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo2_mob.jpg    1x,
+                    ./images/photo2_mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/photo2_mob.jpg"
+                  alt="Фото Ольги Репиной"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p lang="en" class="team__position">Frontend Developer</p>
@@ -292,12 +339,35 @@
             </li>
 
             <li class="team__item card-set__item">
-              <img
-                src="./images/photo3.jpg"
-                alt="Фото Николая Тарасова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo3_dt.jpg    1x,
+                    ./images/photo3_dt@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo3_tab.jpg    1x,
+                    ./images/photo3_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo3_mob.jpg    1x,
+                    ./images/photo3_mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/photo3_mob.jpg"
+                  alt="Фото Николая Тарасова"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p lang="en" class="team__position">Marketing</p>
@@ -355,12 +425,35 @@
             </li>
 
             <li class="team__item card-set__item">
-              <img
-                src="./images/photo4.jpg"
-                alt="Фото Михаила Ермакова"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo4_dt.jpg    1x,
+                    ./images/photo4_dt@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo4_tab.jpg    1x,
+                    ./images/photo4_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo4_mob.jpg    1x,
+                    ./images/photo4_mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/photo4_mob.jpg"
+                  alt="Фото Михаила Ермакова"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p lang="en" class="team__position">UI Designer</p>
@@ -419,7 +512,7 @@
           </ul>
         </div>
       </section>
-      <section class="clients section">
+      <!-- <section class="clients section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients__list list card-set">
@@ -497,9 +590,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__column">
           <a href="/" lang="en" class="logo footer__logo"
@@ -605,7 +698,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal__close-button">
@@ -668,13 +761,18 @@
               value="true"
             />
             <span class="modal__custom-icon"></span>
-            Соглашаюсь с рассылкой и принимаю
-            <a href="/" target="_blank" class="modal__link">Условия договора</a>
+            <p>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="/" target="_blank" class="modal__link"
+                >Условия договора</a
+              >
+            </p>
           </label>
           <button type="submit" class="button modal__button">Отправить</button>
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
