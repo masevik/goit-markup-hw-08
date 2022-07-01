@@ -119,46 +119,76 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="works section">
+      <section class="works section">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="list works__list card-set">
             <li class="works__item card-set__item">
               <div class="works__thumb">
-                <img
-                  src="./images/works1_dt.jpg"
-                  alt="Планшет и клавиатура на столе"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/works1_dt.jpg    1x,
+                      ./images/works1_dt@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/works1_dt.jpg"
+                    alt="Планшет и клавиатура на столе"
+                    width="370"
+                    height="294"
+                    sizes="(min-width: 1200px) 33vw"
+                  />
+                </picture>
                 <h3 class="works__title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="works__item card-set__item">
               <div class="works__thumb">
-                <img
-                  src="./images/works2_dt.jpg"
-                  alt="Ноутбук и телефон"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/works2_dt.jpg    1x,
+                      ./images/works2_dt@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/works2_dt.jpg"
+                    alt="Ноутбук и телефон"
+                    width="370"
+                    height="294"
+                    sizes="(min-width: 1200px) 33vw"
+                  />
+                </picture>
                 <h3 class="works__title">Мобильные приложения</h3>
               </div>
             </li>
             <li class="works__item card-set__item">
               <div class="works__thumb">
-                <img
-                  src="./images/works3_dt.jpg"
-                  alt="Планшет"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/works3_dt.jpg    1x,
+                      ./images/works3_dt@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/works3_dt.jpg"
+                    alt="Планшет"
+                    width="370"
+                    height="294"
+                    sizes="(min-width: 1200px) 33vw"
+                  />
+                </picture>
                 <h3 class="works__title">Дизайнерские решения</h3>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="team section">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
@@ -512,7 +542,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="clients__list list card-set">
@@ -590,9 +620,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__column">
           <a href="/" lang="en" class="logo footer__logo"
@@ -698,7 +728,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal__close-button">
@@ -760,7 +790,9 @@
               class="modal__checkbox"
               value="true"
             />
-            <span class="modal__custom-icon"></span>
+            <div class="modal-icon-wrap">
+              <span class="modal__custom-icon"></span>
+            </div>
             <p>
               Соглашаюсь с рассылкой и принимаю
               <a href="/" target="_blank" class="modal__link"

@@ -176,6 +176,9 @@
     border-color: $accentColor;
   }
 }
+.modal-icon-wrap {
+  display: flex;
+}
 
 .modal__link {
   color: $accentColor;

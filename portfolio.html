@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <nav class="nav">
           <a href="/" lang="en" class="logo header__logo"
@@ -51,7 +51,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="section">
         <div class="container">
@@ -93,12 +93,36 @@
                 class="link portfolio__link"
               >
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/workexmpl1_dt.jpg"
-                    alt="Интернет-магазин открытый на ноутбуке"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/workexmpl1_dt.jpg    1x,
+                        ./images/workexmpl1_dt@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl1_tab.jpg    1x,
+                        ./images/workexmpl1_tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl1_mob.jpg    1x,
+                        ./images/workexmpl1_mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/workexmpl1_mob.jpg"
+                      alt="Интернет-магазин открытый на ноутбуке"
+                      width="450"
+                      height="294"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw,  100vw"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -120,12 +144,36 @@
                 class="link portfolio__link"
               >
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/workexmpl2_dt.jpg"
-                    alt="Постер о баскетболе"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/workexmpl2_dt.jpg    1x,
+                        ./images/workexmpl2_dt@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl2_tab.jpg    1x,
+                        ./images/workexmpl2_tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl2_mob.jpg    1x,
+                        ./images/workexmpl2_mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/workexmpl2_mob.jpg"
+                      alt="Постер о баскетболе"
+                      width="450"
+                      height="294"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw,  100vw"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -149,12 +197,36 @@
                 class="link portfolio__link"
               >
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/workexmpl3_dt.jpg"
-                    alt="Лого ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/workexmpl3_dt.jpg    1x,
+                        ./images/workexmpl3_dt@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl3_tab.jpg    1x,
+                        ./images/workexmpl3_tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl3_mob.jpg    1x,
+                        ./images/workexmpl3_mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/workexmpl3_mob.jpg"
+                      alt="Лого ресторана"
+                      width="450"
+                      height="294"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw,  100vw"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -178,12 +250,36 @@
                 class="link portfolio__link"
               >
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/workexmpl4_dt.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/workexmpl4_dt.jpg    1x,
+                        ./images/workexmpl4_dt@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl4_tab.jpg    1x,
+                        ./images/workexmpl4_tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl4_mob.jpg    1x,
+                        ./images/workexmpl4_mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/workexmpl4_mob.jpg"
+                      alt="Наушники"
+                      width="450"
+                      height="294"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw,  100vw"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -207,12 +303,36 @@
                 class="link portfolio__link"
               >
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/workexmpl5_dt.jpg"
-                    alt="Подарочные коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/workexmpl5_dt.jpg    1x,
+                        ./images/workexmpl5_dt@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl5_tab.jpg    1x,
+                        ./images/workexmpl5_tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl5_mob.jpg    1x,
+                        ./images/workexmpl5_mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/workexmpl5_mob.jpg"
+                      alt="Подарочные коробки"
+                      width="450"
+                      height="294"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw,  100vw"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -236,12 +356,36 @@
                 class="link portfolio__link"
               >
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/workexmpl6_dt.jpg"
-                    alt="Монитор с открытым интернет-магазином"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/workexmpl6_dt.jpg    1x,
+                        ./images/workexmpl6_dt@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl6_tab.jpg    1x,
+                        ./images/workexmpl6_tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl6_mob.jpg    1x,
+                        ./images/workexmpl6_mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/workexmpl6_mob.jpg"
+                      alt="Монитор с открытым интернет-магазином"
+                      width="450"
+                      height="294"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw,  100vw"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -265,12 +409,36 @@
                 class="link portfolio__link"
               >
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/workexmpl7_dt.jpg"
-                    alt="Книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/workexmpl7_dt.jpg    1x,
+                        ./images/workexmpl7_dt@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl7_tab.jpg    1x,
+                        ./images/workexmpl7_tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl7_mob.jpg    1x,
+                        ./images/workexmpl7_mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/workexmpl7_mob.jpg"
+                      alt="Книга"
+                      width="450"
+                      height="294"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw,  100vw"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -294,12 +462,36 @@
                 class="link portfolio__link"
               >
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/workexmpl8_dt.jpg"
-                    alt="Дизай этикетки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/workexmpl8_dt.jpg    1x,
+                        ./images/workexmpl8_dt@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl8_tab.jpg    1x,
+                        ./images/workexmpl8_tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl8_mob.jpg    1x,
+                        ./images/workexmpl8_mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/workexmpl8_mob.jpg"
+                      alt="Дизай этикетки"
+                      width="450"
+                      height="294"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw,  100vw"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -323,12 +515,36 @@
                 class="link portfolio__link"
               >
                 <div class="portfolio__thumb">
-                  <img
-                    src="./images/workexmpl9_dt.jpg"
-                    alt="Приложение на ноутбуке"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/workexmpl9_dt.jpg    1x,
+                        ./images/workexmpl9_dt@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl9_tab.jpg    1x,
+                        ./images/workexmpl9_tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/workexmpl9_mob.jpg    1x,
+                        ./images/workexmpl9_mob@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/workexmpl9_mob.jpg"
+                      alt="Приложение на ноутбуке"
+                      width="450"
+                      height="294"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw,  100vw"
+                    />
+                  </picture>
                   <p class="portfolio__text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
