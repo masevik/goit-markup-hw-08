@@ -825,14 +825,14 @@ body {
   background-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__checkbox:checked + div:first-of-type > .modal__custom-icon {
+.modal__checkbox:checked + .modal__custom-icon {
   border-color: #2196f3;
   background-color: #2196f3;
   background-image: url(../images/checked.svg);
   background-size: contain;
   background-origin: border-box;
 }
-.modal__checkbox:focus + div:first-of-type > .modal__custom-icon, .modal__checkbox:hover + div:first-of-type > .modal__custom-icon {
+.modal__checkbox:focus + .modal__custom-icon, .modal__checkbox:hover + .modal__custom-icon {
   border-color: #2196f3;
 }
 
