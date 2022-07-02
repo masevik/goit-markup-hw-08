@@ -45,6 +45,10 @@
   }
 }
 
+.modal__svg {
+  position: absolute;
+}
+
 .no-scroll {
   overflow: hidden;
 }
@@ -163,7 +167,7 @@
   transition: background-color $transitionFunction,
     border-color $transitionFunction;
 
-  .modal__checkbox:checked + & {
+  .modal__checkbox:checked + div:first-of-type > & {
     border-color: $accentColor;
     background-color: $accentColor;
     background-image: url(../images/checked.svg);
@@ -171,11 +175,12 @@
     background-origin: border-box;
   }
 
-  .modal__checkbox:focus + &,
-  .modal__checkbox:hover + & {
+  .modal__checkbox:focus + div:first-of-type > &,
+  .modal__checkbox:hover + div:first-of-type > & {
     border-color: $accentColor;
   }
 }
+
 .modal-icon-wrap {
   display: flex;
 }

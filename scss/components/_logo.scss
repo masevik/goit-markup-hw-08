@@ -1,6 +1,6 @@
 .logo {
   font-family: 'Raleway', sans-serif;
-  @include font(26px, 700, 1.19, null);
+  @include font(24px, 700, 1.17, null);
   text-decoration: none;
   color: $accentColor;
 
@@ -10,5 +10,9 @@
 
   &--black {
     color: $blackTextColor;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(26px, 700, 1.19, null);
   }
 }
