@@ -51,7 +51,6 @@
 }
 
 .mobile-menu__link {
-  display: block;
   @include font(40px, null, 1.18, 0.02em);
   transition: color $transitionFunction;
 
@@ -65,6 +64,15 @@
 .mobile-contacts {
   @include font(24px, null, 1.17, 0.02em);
   margin-bottom: 64px;
+}
+
+.mobile-contacts__link {
+  transition: color $transitionFunction;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
 }
 
 .mobile-contacts__item:not(:last-child) {
