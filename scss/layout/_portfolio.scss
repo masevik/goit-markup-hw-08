@@ -22,6 +22,7 @@
   height: 100%;
   padding: 63px 24px;
   @include font(18px, null, 1.56, null);
+  overflow: auto;
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
   transition: transform $transitionFunction;
@@ -29,6 +30,11 @@
   .portfolio__link:hover &,
   .portfolio__link:focus & {
     transform: translateY(-100%);
+  }
+
+  @media screen and (max-width: 479px) {
+    padding: 24px 24px;
+    @include font(14px, null, 1.37, null);
   }
 }
 
