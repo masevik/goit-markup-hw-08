@@ -18,11 +18,13 @@
 
 .portfolio__text {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   padding: 63px 24px;
   @include font(18px, null, 1.56, null);
-  overflow: auto;
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
   transition: transform $transitionFunction;

@@ -80,6 +80,14 @@
   font-size: 34px;
   color: $accentColor;
   margin-bottom: 32px;
+
+  @media screen and (max-width: 324px) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: 325px) {
+    font-size: 34px;
+  }
 }
 
 .mobile-social {
