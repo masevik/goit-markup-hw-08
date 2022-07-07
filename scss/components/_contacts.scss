@@ -8,8 +8,10 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    align-items: flex-start;
     margin-left: auto;
     font-size: 12px;
     line-height: 1.17;
@@ -18,12 +20,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.14;
-  }
-}
-
-.contacts__item {
-  @media screen and (max-width: 1199px) {
-    margin-left: 84px;
+    flex-direction: row;
   }
 }
 

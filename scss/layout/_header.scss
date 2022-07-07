@@ -4,16 +4,17 @@
 
   .container {
     display: flex;
+    align-items: center;
   }
-}
 
-.header__logo {
-  display: block;
-  margin-right: 88px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  .header__logo {
+    display: block;
+    margin-right: 88px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
-  @media screen and (min-width: 1200px) {
-    margin-right: 93px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
 }
